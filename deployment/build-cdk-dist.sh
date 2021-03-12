@@ -53,7 +53,7 @@ mkdir -p $dist_dir
 
 for dir in $(find $source_dir/patterns/\@aws-solutions-constructs/ -name dist | grep -v node_modules | grep -v coverage); do
   echo "Merging ${dir} into ${dist_dir}" >&2
-  rsync -a $dir/ ${dist_dir}/
+  rsync -a $dir/ /
 done
 
 echo "------------------------------------------------------------------------------"
