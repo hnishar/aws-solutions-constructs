@@ -57,6 +57,31 @@ for dir in $(find $source_dir/patterns/\@aws-solutions-constructs/ -name dist | 
 done
 
 echo "------------------------------------------------------------------------------"
+echo "[Create] build.json file"
+echo "------------------------------------------------------------------------------"
+# Get commit from CodePipeline (or git, if we are in CodeBuild)
+# If CODEBUILD_RESOLVED_SOURCE_VERSION is not defined (i.e. local
+# build or CodePipeline build), use the HEAD commit hash).
+echo $deployment_dir
+version=$(node -p "require('$deployment_dir/get-version.js')")
+commit="${CODEBUILD_RESOLVED_SOURCE_VERSION:-}"
+if [ -z "${commit}" ]; then
+  commit="$(git rev-parse --verify HEAD)"
+fi
+
+cat > ${dist_dir}/build.json <<HERE
+{
+  "name": "aws-solutions-constructs",
+  "version": "${version}",
+  "commit": "${commit}"
+}
+HERE
+
+# copy CHANGELOG.md to dist/ for github releases
+changelog_file=$deployment_dir/../CHANGELOG.md
+cp ${changelog_file} ${dist_dir}/CHANGELOG.md
+
+echo "------------------------------------------------------------------------------"
 echo "[List] deployment/dist contents"
 echo "------------------------------------------------------------------------------"
 
