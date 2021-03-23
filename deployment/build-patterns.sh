@@ -4,8 +4,6 @@ set -euo pipefail
 deployment_dir=$(cd $(dirname $0) && pwd)
 source_dir="$deployment_dir/../source"
 
-aws s3 ls
-
 echo "============================================================================================="
 echo "aligning versions..."
 /bin/bash $deployment_dir/align-version.sh
