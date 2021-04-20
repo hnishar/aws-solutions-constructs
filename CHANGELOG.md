@@ -4,6 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [1.99.0](https://github.com/hnishar/aws-solutions-constructs/compare/v1.90.0...v1.99.0) (2021-04-20)
 
+### Changed
+- Upgraded all patterns to CDK v1.99.0
+
 ## 1.98.0 (2021-04-16)
 
 ### Changed
