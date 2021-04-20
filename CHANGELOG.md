@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.99.0](https://github.com/hnishar/aws-solutions-constructs/compare/v1.90.0...v1.99.0) (2021-04-20)
+
+### Changed
+- Upgraded all patterns to CDK v1.99.0
+
+## 1.98.0 (2021-04-16)
+
+### Changed
+- Upgraded all patterns to CDK v1.97.0
+- Added VPC support to aws-lambda-dynamodb ([#148](https://github.com/awslabs/aws-solutions-constructs/issues/148))
+- Documentation correction ([#158](https://github.com/awslabs/aws-solutions-constructs/pull/158))
+
 ## 1.97.0 (2021-04-14)
 
 ### Changed
