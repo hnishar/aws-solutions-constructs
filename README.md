@@ -47,4 +47,3 @@ This library includes a collection of functional use case implementations to dem
 
 ***
 &copy; Copyright 2021 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-
