@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.100.0](https://github.com/hnishar/aws-solutions-constructs/compare/v1.90.0...v1.100.0) (2021-04-27)
+
+
+### Bug Fixes
+
+* **README:** Adding few blank lines ([#21](https://github.com/hnishar/aws-solutions-constructs/issues/21)) ([443ca32](https://github.com/hnishar/aws-solutions-constructs/commit/443ca327651e8321b2f8539c6c0d54fad9b43a5c))
+
 ## [1.99.0](https://github.com/hnishar/aws-solutions-constructs/compare/v1.90.0...v1.99.0) (2021-04-20)
 
 ### Changed
